@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black; /* Set background color to black */
+            color: white; /* Set text color to white */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #head {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .phone-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 500px; /* Set a fixed width for the phone containers */
+            margin: 0 auto;
+             /* Center the containers horizontally */
+        }
+
+        .iphone, .android {
+            width: 880px;
+            height: 650px;
+            border: 2px solid #BFBFBF;
+            border-radius: 40px;
+            background-color: #282828;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            
+            margin: 10px;
+        }
+
+        .scroll-content {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 100%;
+            animation: scroll 35s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% { top: 0; }
+            100% { top: -1800px; } /* Adjust value according to number of gyms */
+        }
+
+        .gym-slide {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .gym-slide img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .gym-slide p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .images-container {
+    display: flex;
+    justify-content: center; /* Distribute space between images */
+    margin: 20px; 
+    padding: 10px;/* Add some margin between phone container and images */
+}
+
+.content {
+            max-width: 600px; /* Set maximum width for content */
+            margin: 0 auto; /* Center content horizontally */
+            padding: 20px; /* Add padding around content */
+        }
+
+        h1 {
+            margin-top: 0; /* Remove margin from top of heading */
+            font-size: 36px; /* Increase font size */
+            color: #007bff; /* Set heading color */
+        }
+
+        p {
+            margin-top: 20px; /* Add space below heading */
+            font-size: 18px; /* Set font size */
+            line-height: 1.6; /* Increase line height for better readability */
+        }
+
+        h3 {
+            margin-top: 20px; /* Add space below paragraph */
+            font-size: 24px; /* Set font size */
+            color: yellow; /* Set heading color */
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <div id="head">
+        <h1>Gym Worm</h1>
+        
+        
+        <h3>Download From Apple App Store and Google Play Store</h3>
+    </div>
+    
+
+    <div class="phone-container">
+        <div class="iphone">
+            <!-- Animated image -->
+            <div class="scroll-content">
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 1">
+                    <p>Greek God Fitness, New Delhi - Vasant Vihar, Rates: Rs 500 -/-</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 2">
+                    <p>PRO HEALTH TIME GYM- NEW DELHI - IIT DELHI - GREATER KAILASH, RATES RS 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 3">
+                    <p>BEST UNISEX GYM, NORTH DELHI, PAHAR KUNJ, RATE: rS 799</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym4.jpg" alt="Gym Image 4">
+                    <p>Health Pro Delhi South, Rate: Rs 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="">
+                    <p>Life N Health North Delhi, Rate: Rs 699</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym6.jpg" alt="Gym Image 6">
+                    <p>Balance Fit South Delhi, Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 6">
+                    <p>GOD AND FIT, NORTH DELHI, Rate: Rs 1000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 6">
+                    <p>Balance PRO GYM, SOUTH DELHI, Rate: Rs 2000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="Gym Image 6">
+                    <p>FITNESS GEEK, EAST DEHLI,Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 6">
+                    <p>LIFE AND GYM, NORTH DELHI, Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 1">
+                    <p>Greek God Fitness, New Delhi - Vasant Vihar, Rates: Rs 500 -/-</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 2">
+                    <p>PRO HEALTH TIME GYM- NEW DELHI - IIT DELHI - GREATER KAILASH, RATES RS 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 3">
+                    <p>BEST UNISEX GYM, NORTH DELHI, PAHAR KUNJ, RATE: rS 799</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym4.jpg" alt="Gym Image 4">
+                    <p>Health Pro Delhi South, Rate: Rs 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="">
+                    <p>Life N Health North Delhi, Rate: Rs 699</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym6.jpg" alt="Gym Image 6">
+                    <p>Balance Fit South Delhi, Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 6">
+                    <p>GOD AND FIT, NORTH DELHI, Rate: Rs 1000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 6">
+                    <p>Balance PRO GYM, SOUTH DELHI, Rate: Rs 2000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="Gym Image 6">
+                    <p>FITNESS GEEK, EAST DEHLI,Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 6">
+                    <p>LIFE AND GYM, NORTH DELHI, Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 1">
+                    <p>Greek God Fitness, New Delhi - Vasant Vihar, Rates: Rs 500 -/-</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 2">
+                    <p>PRO HEALTH TIME GYM- NEW DELHI - IIT DELHI - GREATER KAILASH, RATES RS 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 3">
+                    <p>BEST UNISEX GYM, NORTH DELHI, PAHAR KUNJ, RATE: rS 799</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym4.jpg" alt="Gym Image 4">
+                    <p>Health Pro Delhi South, Rate: Rs 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="">
+                    <p>Life N Health North Delhi, Rate: Rs 699</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym6.jpg" alt="Gym Image 6">
+                    <p>Balance Fit South Delhi, Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 6">
+                    <p>GOD AND FIT, NORTH DELHI, Rate: Rs 1000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 6">
+                    <p>Balance PRO GYM, SOUTH DELHI, Rate: Rs 2000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="Gym Image 6">
+                    <p>FITNESS GEEK, EAST DEHLI,Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 6">
+                    <p>LIFE AND GYM, NORTH DELHI, Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 1">
+                    <p>Greek God Fitness, New Delhi - Vasant Vihar, Rates: Rs 500 -/-</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 2">
+                    <p>PRO HEALTH TIME GYM- NEW DELHI - IIT DELHI - GREATER KAILASH, RATES RS 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 3">
+                    <p>BEST UNISEX GYM, NORTH DELHI, PAHAR KUNJ, RATE: rS 799</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym4.jpg" alt="Gym Image 4">
+                    <p>Health Pro Delhi South, Rate: Rs 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="">
+                    <p>Life N Health North Delhi, Rate: Rs 699</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym6.jpg" alt="Gym Image 6">
+                    <p>Balance Fit South Delhi, Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 6">
+                    <p>GOD AND FIT, NORTH DELHI, Rate: Rs 1000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 6">
+                    <p>Balance PRO GYM, SOUTH DELHI, Rate: Rs 2000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="Gym Image 6">
+                    <p>FITNESS GEEK, EAST DEHLI,Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 6">
+                    <p>LIFE AND GYM, NORTH DELHI, Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 1">
+                    <p>Greek God Fitness, New Delhi - Vasant Vihar, Rates: Rs 500 -/-</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 2">
+                    <p>PRO HEALTH TIME GYM- NEW DELHI - IIT DELHI - GREATER KAILASH, RATES RS 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 3">
+                    <p>BEST UNISEX GYM, NORTH DELHI, PAHAR KUNJ, RATE: rS 799</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym4.jpg" alt="Gym Image 4">
+                    <p>Health Pro Delhi South, Rate: Rs 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="">
+                    <p>Life N Health North Delhi, Rate: Rs 699</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym6.jpg" alt="Gym Image 6">
+                    <p>Balance Fit South Delhi, Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 6">
+                    <p>GOD AND FIT, NORTH DELHI, Rate: Rs 1000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 6">
+                    <p>Balance PRO GYM, SOUTH DELHI, Rate: Rs 2000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="Gym Image 6">
+                    <p>FITNESS GEEK, EAST DEHLI,Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 6">
+                    <p>LIFE AND GYM, NORTH DELHI, Rate: Rs 888</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        <div class="android">
+            <!-- Animated image -->
+            <div class="scroll-content">
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 1">
+                    <p>Greek God Fitness, New Delhi - Vasant Vihar, Rates: Rs 500 -/-</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 2">
+                    <p>PRO HEALTH TIME GYM- NEW DELHI - IIT DELHI - GREATER KAILASH, RATES RS 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 3">
+                    <p>BEST UNISEX GYM, NORTH DELHI, PAHAR KUNJ, RATE: rS 799</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym4.jpg" alt="Gym Image 4">
+                    <p>Health Pro Delhi South, Rate: Rs 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="">
+                    <p>Life N Health North Delhi, Rate: Rs 699</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym6.jpg" alt="Gym Image 6">
+                    <p>Balance Fit South Delhi, Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 6">
+                    <p>GOD AND FIT, NORTH DELHI, Rate: Rs 1000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 6">
+                    <p>Balance PRO GYM, SOUTH DELHI, Rate: Rs 2000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="Gym Image 6">
+                    <p>FITNESS GEEK, EAST DEHLI,Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 6">
+                    <p>LIFE AND GYM, NORTH DELHI, Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 1">
+                    <p>Greek God Fitness, New Delhi - Vasant Vihar, Rates: Rs 500 -/-</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 2">
+                    <p>PRO HEALTH TIME GYM- NEW DELHI - IIT DELHI - GREATER KAILASH, RATES RS 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 3">
+                    <p>BEST UNISEX GYM, NORTH DELHI, PAHAR KUNJ, RATE: rS 799</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym4.jpg" alt="Gym Image 4">
+                    <p>Health Pro Delhi South, Rate: Rs 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="">
+                    <p>Life N Health North Delhi, Rate: Rs 699</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym6.jpg" alt="Gym Image 6">
+                    <p>Balance Fit South Delhi, Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 6">
+                    <p>GOD AND FIT, NORTH DELHI, Rate: Rs 1000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 6">
+                    <p>Balance PRO GYM, SOUTH DELHI, Rate: Rs 2000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="Gym Image 6">
+                    <p>FITNESS GEEK, EAST DEHLI,Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 6">
+                    <p>LIFE AND GYM, NORTH DELHI, Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 1">
+                    <p>Greek God Fitness, New Delhi - Vasant Vihar, Rates: Rs 500 -/-</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 2">
+                    <p>PRO HEALTH TIME GYM- NEW DELHI - IIT DELHI - GREATER KAILASH, RATES RS 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 3">
+                    <p>BEST UNISEX GYM, NORTH DELHI, PAHAR KUNJ, RATE: rS 799</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym4.jpg" alt="Gym Image 4">
+                    <p>Health Pro Delhi South, Rate: Rs 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="">
+                    <p>Life N Health North Delhi, Rate: Rs 699</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym6.jpg" alt="Gym Image 6">
+                    <p>Balance Fit South Delhi, Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 6">
+                    <p>GOD AND FIT, NORTH DELHI, Rate: Rs 1000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 6">
+                    <p>Balance PRO GYM, SOUTH DELHI, Rate: Rs 2000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="Gym Image 6">
+                    <p>FITNESS GEEK, EAST DEHLI,Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 6">
+                    <p>LIFE AND GYM, NORTH DELHI, Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 1">
+                    <p>Greek God Fitness, New Delhi - Vasant Vihar, Rates: Rs 500 -/-</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 2">
+                    <p>PRO HEALTH TIME GYM- NEW DELHI - IIT DELHI - GREATER KAILASH, RATES RS 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 3">
+                    <p>BEST UNISEX GYM, NORTH DELHI, PAHAR KUNJ, RATE: rS 799</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym4.jpg" alt="Gym Image 4">
+                    <p>Health Pro Delhi South, Rate: Rs 999</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="">
+                    <p>Life N Health North Delhi, Rate: Rs 699</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym6.jpg" alt="Gym Image 6">
+                    <p>Balance Fit South Delhi, Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym1.jpg" alt="Gym Image 6">
+                    <p>GOD AND FIT, NORTH DELHI, Rate: Rs 1000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym3.jpg" alt="Gym Image 6">
+                    <p>Balance PRO GYM, SOUTH DELHI, Rate: Rs 2000</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym7.jpg" alt="Gym Image 6">
+                    <p>FITNESS GEEK, EAST DEHLI,Rate: Rs 888</p>
+                </div>
+                <div class="gym-slide">
+                    <img src="img/gym2.jpg" alt="Gym Image 6">
+                    <p>LIFE AND GYM, NORTH DELHI, Rate: Rs 888</p>
+                </div>
+                <!-- Add more gym slides as needed -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="images-container">
+    <!-- Apple logo image -->
+    <a href=""><img src="img/apl.png" alt="apple logo" style="width: 200px;  margin: 5px;"></a>
+    <!-- GST logo image -->
+    <a href=""><img src="img/gst.png" alt="gst logo" style="width: 200px; margin: 5px;"></a>
+</div>
+
+<footer style="display: flex; justify-content: center;">
+    <h3>Designed and Developed By Kumar Biswas</h3>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
